@@ -8,7 +8,7 @@ percentages based on Forks and Stars Count and you can share that statistics.
 
 You should have build.gradle looking like this :
 
-```
+```java
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
