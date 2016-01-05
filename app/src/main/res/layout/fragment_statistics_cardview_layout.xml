@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear_layout">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <RelativeLayout
+            android:id="@+id/statistics_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/statistics_repo_photo"
+                android:layout_width="48dp"
+                android:layout_height="54dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/statistic_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/home_repo_photo"
+                android:text="Statistics xxx Repo: "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/statistic_text"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/home_repo_photo"
+                android:progressDrawable="@drawable/progressbarcustom" />
+
+            <TextView
+                android:id="@+id/forks_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/statistic_text"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/progressBar"
+                android:paddingLeft="5dp"
+                android:text="%0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/progressbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/progressBar"
+                android:layout_alignLeft="@id/progressBar"
+                android:layout_alignRight="@id/progressBar"
+                android:layout_alignTop="@id/progressBar"
+                android:paddingLeft="5dp"
+                android:text="5 s" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/progressBar"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/home_repo_photo"
+                android:progressDrawable="@drawable/progressbarcustom" />
+
+            <TextView
+                android:id="@+id/stars_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/progressBar"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/progressBar2"
+                android:paddingLeft="5dp"
+                android:text="%100"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/progressbar_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/progressBar2"
+                android:layout_alignLeft="@id/progressBar2"
+                android:layout_alignRight="@id/progressBar2"
+                android:layout_alignTop="@id/progressBar2"
+                android:paddingLeft="5dp"
+                android:text="5 s" />
+
+            <TextView
+                android:id="@+id/counts_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressBar2"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Forks : \t Stars: \tTotals :"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/statistics_share_button"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/counts_text"
+                android:background="@drawable/share"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
